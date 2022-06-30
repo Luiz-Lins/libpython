@@ -12,5 +12,5 @@ def buscar_avatar(usuario):
     return resp.json()['avatar_url']
 
 
-if __name__ == '__main__':
-    print(buscar_avatar('Luiz-Lins'))
+def request():
+    return None
