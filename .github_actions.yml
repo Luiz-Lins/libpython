@@ -8,3 +8,13 @@ script:
   -pytest libpythonpro --cov=libpythonpro
 after_success:
   - codecov
+steps:
+- uses: actions/checkout@master
+- uses: codecov/codecov-action@v3
+  with:
+    token: ${{b2c0f64b-e98d-43e5-a899-a01581da497b}} # not required for public repos
+    files:  # optional
+    flags: unittests # optional
+    name: codecov-umbrella # optional
+    fail_ci_if_error: true # optional (default = false)
+    verbose: true # optional (default = false)
