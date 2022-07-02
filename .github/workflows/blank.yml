@@ -34,3 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: codecov
+        env:
+          CODECOV_TOKEN: "b2c0f64b-e98d-43e5-a899-a01581da497b"
+        run: codecov
