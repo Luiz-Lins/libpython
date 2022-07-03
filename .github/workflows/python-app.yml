@@ -1,13 +1,6 @@
-language: python
-python:
-  - 3.10
-install:
-  - pip install -q -r requirements-dev.txt codecov
-script:
-  -flake8
-  -pytest libpythonpro --cov=libpythonpro
-after_success:
-  - codecov
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
 name: Python application
 
 on:
