@@ -1,13 +1,3 @@
-language: python
-python:
-  - 3.10
-install:
-  - pip install -q -r requirements-dev.txt codecov
-script:
-  -flake8
-  -pytest libpythonpro --cov=libpythonpro
-after_success:
-  - codecov
 name: Python application
 
 on:
